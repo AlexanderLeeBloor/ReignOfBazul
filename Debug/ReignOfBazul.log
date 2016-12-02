@@ -1,0 +1,13 @@
+﻿  sprite_renderer.cpp
+  GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  game_level.cpp
+c:\users\alex\documents\visual studio 2015\projects\reignofbazul\reignofbazul\game_level.cpp(74): warning C4244: 'initializing': conversion from 'GLuint' to 'GLfloat', possible loss of data
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  shader.cpp
+  resource_manager.cpp
+  main.cpp
+  game_object.cpp
+  game.cpp
+  ReignOfBazul.vcxproj -> C:\Users\Alex\documents\visual studio 2015\Projects\ReignOfBazul\Debug\ReignOfBazul.exe
+  ReignOfBazul.vcxproj -> C:\Users\Alex\documents\visual studio 2015\Projects\ReignOfBazul\Debug\ReignOfBazul.pdb (Partial PDB)
