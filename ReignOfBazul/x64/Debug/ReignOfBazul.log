@@ -1,0 +1,64 @@
+﻿  texture.cpp
+  sprite_renderer.cpp
+  GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  shader.cpp
+  resource_manager.cpp
+  main.cpp
+c:\users\alex\documents\visual studio 2015\projects\reignofbazul\reignofbazul\main.cpp(60): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+  game_object.cpp
+  game_level.cpp
+c:\users\alex\documents\visual studio 2015\projects\reignofbazul\reignofbazul\game_level.cpp(71): warning C4267: 'initializing': conversion from 'size_t' to 'GLuint', possible loss of data
+c:\users\alex\documents\visual studio 2015\projects\reignofbazul\reignofbazul\game_level.cpp(72): warning C4267: 'initializing': conversion from 'size_t' to 'GLuint', possible loss of data
+c:\users\alex\documents\visual studio 2015\projects\reignofbazul\reignofbazul\game_level.cpp(74): warning C4244: 'initializing': conversion from 'GLuint' to 'GLfloat', possible loss of data
+  game.cpp
+  Generating Code...
+main.obj : error LNK2019: unresolved external symbol glewInit referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwInit referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwTerminate referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwWindowHint referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwCreateWindow referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwWindowShouldClose referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwSetWindowShouldClose referenced in function "void __cdecl key_callback(struct GLFWwindow *,int,int,int,int)" (?key_callback@@YAXPEAUGLFWwindow@@HHHH@Z)
+main.obj : error LNK2019: unresolved external symbol glfwPollEvents referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwSetKeyCallback referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwGetTime referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwMakeContextCurrent referenced in function main
+main.obj : error LNK2019: unresolved external symbol glfwSwapBuffers referenced in function main
+main.obj : error LNK2001: unresolved external symbol glewExperimental
+resource_manager.obj : error LNK2019: unresolved external symbol SOIL_load_image referenced in function "private: static class Texture2D __cdecl ResourceManager::loadTextureFromFile(char const *,unsigned char)" (?loadTextureFromFile@ResourceManager@@CA?AVTexture2D@@PEBDE@Z)
+resource_manager.obj : error LNK2019: unresolved external symbol SOIL_free_image_data referenced in function "private: static class Texture2D __cdecl ResourceManager::loadTextureFromFile(char const *,unsigned char)" (?loadTextureFromFile@ResourceManager@@CA?AVTexture2D@@PEBDE@Z)
+resource_manager.obj : error LNK2001: unresolved external symbol __imp___glewDeleteProgram
+shader.obj : error LNK2001: unresolved external symbol __imp___glewAttachShader
+shader.obj : error LNK2001: unresolved external symbol __imp___glewCompileShader
+shader.obj : error LNK2001: unresolved external symbol __imp___glewCreateProgram
+shader.obj : error LNK2001: unresolved external symbol __imp___glewCreateShader
+shader.obj : error LNK2001: unresolved external symbol __imp___glewDeleteShader
+shader.obj : error LNK2001: unresolved external symbol __imp___glewGetProgramInfoLog
+shader.obj : error LNK2001: unresolved external symbol __imp___glewGetProgramiv
+shader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderInfoLog
+shader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderiv
+shader.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
+shader.obj : error LNK2001: unresolved external symbol __imp___glewLinkProgram
+shader.obj : error LNK2001: unresolved external symbol __imp___glewShaderSource
+shader.obj : error LNK2001: unresolved external symbol __imp___glewUniform1f
+shader.obj : error LNK2001: unresolved external symbol __imp___glewUniform1i
+shader.obj : error LNK2001: unresolved external symbol __imp___glewUniform2f
+shader.obj : error LNK2001: unresolved external symbol __imp___glewUniform3f
+shader.obj : error LNK2001: unresolved external symbol __imp___glewUniform4f
+shader.obj : error LNK2001: unresolved external symbol __imp___glewUniformMatrix4fv
+shader.obj : error LNK2001: unresolved external symbol __imp___glewUseProgram
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewBufferData
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewDeleteBuffers
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewGenBuffers
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewEnableVertexAttribArray
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewVertexAttribPointer
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewBindVertexArray
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewDeleteVertexArrays
+sprite_renderer.obj : error LNK2001: unresolved external symbol __imp___glewGenVertexArrays
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\ReignOfBazul\Libs\glfw3.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\ReignOfBazul\Libs\glew32s.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\ReignOfBazul\Libs\SOIL.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\ReignOfBazul\Libs\irrKlang.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\Alex\documents\visual studio 2015\Projects\ReignOfBazul\x64\Debug\ReignOfBazul.exe : fatal error LNK1120: 45 unresolved externals
