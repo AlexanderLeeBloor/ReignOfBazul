@@ -1,2 +1,46 @@
-﻿  ReignOfBazul.vcxproj -> C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\Debug\ReignOfBazul.exe
-  ReignOfBazul.vcxproj -> C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\Debug\ReignOfBazul.pdb (Partial PDB)
+﻿  texture.cpp
+  sprite_renderer.cpp
+  GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+  shader.cpp
+  resource_manager.cpp
+  main.cpp
+c:\users\alex\documents\visual studio 2015\projects\reignofbazul\reignofbazul\main.cpp(60): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+  game_object.cpp
+  game_level.cpp
+c:\users\alex\documents\visual studio 2015\projects\reignofbazul\reignofbazul\game_level.cpp(74): warning C4244: 'initializing': conversion from 'GLuint' to 'GLfloat', possible loss of data
+  game.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+resource_manager.obj : warning LNK4049: locally defined symbol ___glewDeleteProgram imported
+shader.obj : warning LNK4049: locally defined symbol ___glewAttachShader imported
+shader.obj : warning LNK4049: locally defined symbol ___glewCompileShader imported
+shader.obj : warning LNK4049: locally defined symbol ___glewCreateProgram imported
+shader.obj : warning LNK4049: locally defined symbol ___glewCreateShader imported
+shader.obj : warning LNK4049: locally defined symbol ___glewDeleteShader imported
+shader.obj : warning LNK4049: locally defined symbol ___glewGetProgramInfoLog imported
+shader.obj : warning LNK4049: locally defined symbol ___glewGetProgramiv imported
+shader.obj : warning LNK4049: locally defined symbol ___glewGetShaderInfoLog imported
+shader.obj : warning LNK4049: locally defined symbol ___glewGetShaderiv imported
+shader.obj : warning LNK4049: locally defined symbol ___glewGetUniformLocation imported
+shader.obj : warning LNK4049: locally defined symbol ___glewLinkProgram imported
+shader.obj : warning LNK4049: locally defined symbol ___glewShaderSource imported
+shader.obj : warning LNK4049: locally defined symbol ___glewUniform1f imported
+shader.obj : warning LNK4049: locally defined symbol ___glewUniform1i imported
+shader.obj : warning LNK4049: locally defined symbol ___glewUniform2f imported
+shader.obj : warning LNK4049: locally defined symbol ___glewUniform3f imported
+shader.obj : warning LNK4049: locally defined symbol ___glewUniform4f imported
+shader.obj : warning LNK4049: locally defined symbol ___glewUniformMatrix4fv imported
+shader.obj : warning LNK4049: locally defined symbol ___glewUseProgram imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewActiveTexture imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewBindBuffer imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewBufferData imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewDeleteBuffers imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewGenBuffers imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewEnableVertexAttribArray imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewVertexAttribPointer imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewBindVertexArray imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewDeleteVertexArrays imported
+sprite_renderer.obj : warning LNK4049: locally defined symbol ___glewGenVertexArrays imported
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\Alex\documents\visual studio 2015\Projects\ReignOfBazul\Debug\vc120.pdb'; linking object as if no debug info
+  ReignOfBazul.vcxproj -> C:\Users\Alex\documents\visual studio 2015\Projects\ReignOfBazul\Debug\ReignOfBazul.exe
+  ReignOfBazul.vcxproj -> C:\Users\Alex\documents\visual studio 2015\Projects\ReignOfBazul\Debug\ReignOfBazul.pdb (Partial PDB)

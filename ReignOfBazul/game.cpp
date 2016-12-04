@@ -32,7 +32,7 @@ Game::~Game()
 void Game::Init()
 {
 	// Load shaders
-	ResourceManager::LoadShader("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Shaders/sprite.vs", "C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Shaders/sprite.frag", nullptr, "sprite");
+	ResourceManager::LoadShader("./Shaders/sprite.vs", "./Shaders/sprite.frag", nullptr, "sprite");
 	
 	// Configure shaders
 	glm::mat4 projection = glm::ortho(0.0f, static_cast<GLfloat>(this->Width), static_cast<GLfloat>(this->Height), 0.0f, -1.0f, 1.0f);
@@ -40,13 +40,13 @@ void Game::Init()
 	ResourceManager::GetShader("sprite").SetMatrix4("projection", projection);
 
 	// Load textures
-	ResourceManager::LoadTexture("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Images/Sprite-Palette.png", GL_FALSE, "background");
-	ResourceManager::LoadTexture("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Images/SpriteSheet.png", GL_TRUE, "SpriteSheet");
-	ResourceManager::LoadTexture("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Images/BackgroundTiles.png", GL_TRUE, "BackgroundTiles");
-	//ResourceManager::LoadTexture("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Images/awesomeface.png", GL_TRUE, "face");
-	//ResourceManager::LoadTexture("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Images/block.png", GL_FALSE, "block");
-	//ResourceManager::LoadTexture("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Images/block_solid.png", GL_FALSE, "block_solid");
-	//ResourceManager::LoadTexture("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Images/paddle.png", true, "paddle");
+	ResourceManager::LoadTexture("./Images/Sprite-Palette.png", GL_FALSE, "background");
+	ResourceManager::LoadTexture("./Images/SpriteSheet.png", GL_TRUE, "SpriteSheet");
+	ResourceManager::LoadTexture("./Images/BackgroundTiles.png", GL_TRUE, "BackgroundTiles");
+	//ResourceManager::LoadTexture("./Images/awesomeface.png", GL_TRUE, "face");
+	//ResourceManager::LoadTexture("./Images/block.png", GL_FALSE, "block");
+	//ResourceManager::LoadTexture("./Images/block_solid.png", GL_FALSE, "block_solid");
+	//ResourceManager::LoadTexture("./Images/paddle.png", true, "paddle");
 	
 	// Configure game objects
 	glm::vec2 playerPos = glm::vec2(this->Width / 2 - PLAYER_SIZE.x / 2, this->Height - PLAYER_SIZE.y);
@@ -59,10 +59,10 @@ void Game::Init()
 
 	// Load levels
 	GameLevel one, two, three, four;
-	one.Load("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Levels/level-one.txt", this->Width, this->Height);
-	two.Load("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Levels/level-two.txt", this->Width, this->Height);
-	three.Load("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Levels/level-three.txt", this->Width, this->Height);
-	four.Load("C:/Users/Alex/Documents/Visual Studio 2015/Projects/ReignOfBazul/ReignOfBazul/Levels/level-four.txt", this->Width, this->Height);
+	one.Load("./Levels/level-one.txt", this->Width, this->Height);
+	two.Load("./Levels/level-two.txt", this->Width, this->Height);
+	three.Load("./Levels/level-three.txt", this->Width, this->Height);
+	four.Load("./Levels/level-four.txt", this->Width, this->Height);
 	this->Levels.push_back(one);
 	this->Levels.push_back(two);
 	this->Levels.push_back(three);

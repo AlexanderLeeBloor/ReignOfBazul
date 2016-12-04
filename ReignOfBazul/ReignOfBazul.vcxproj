@@ -69,8 +69,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\ReignOfBazul\Include\SOIL;C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\ReignOfBazul\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\ReignOfBazul\Libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>.\Include\SOIL;.\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>.\Libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\ReignOfBazul\Include\SOIL;C:\Users\Alex\Documents\Visual Studio 2015\Projects\ReignOfBazul\ReignOfBazul\Include;$(IncludePath)</IncludePath>
