@@ -45,15 +45,15 @@ void SpriteRenderer::initRenderData(glm::vec2 normalizedTilePosition, glm::vec2 
 {
 	// Configure VAO/VBO
 	GLuint VBO; // Record the index of this VBO
-	GLfloat vertices[] = { // Fix this
-		// Pos      // Tex
-		0.0f, 1.0f, normalizedTilePosition.x, normalizedTilePosition.y,
-		1.0f, 0.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y - normalizedTileSize.y,
-		0.0f, 0.0f, normalizedTilePosition.x, normalizedTilePosition.y - normalizedTileSize.y,
+	GLfloat vertices[] = { // Still some overlap with other tiles. Consider placing buffers into the image files.
+						   // Pos      // Tex
+		0.0f, 1.0f, normalizedTilePosition.x, normalizedTilePosition.y + normalizedTileSize.y,
+		1.0f, 0.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y,
+		0.0f, 0.0f, normalizedTilePosition.x, normalizedTilePosition.y,
 
-		0.0f, 1.0f, normalizedTilePosition.x, normalizedTilePosition.y,
-		1.0f, 1.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y,
-		1.0f, 0.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y - normalizedTileSize.y
+		0.0f, 1.0f, normalizedTilePosition.x, normalizedTilePosition.y + normalizedTileSize.y,
+		1.0f, 1.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y + normalizedTileSize.y,
+		1.0f, 0.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y
 	};
 	/*GLfloat vertices[] = {
 		// Pos      // Tex
@@ -83,15 +83,15 @@ void SpriteRenderer::UpdateRenderData(glm::vec2 normalizedTilePosition, glm::vec
 {
 	// Configure VAO/VBO
 	GLuint VBO; // Replace this with a glBufferSubData call
-	GLfloat vertices[] = { // Fix this
-		// Pos      // Tex
-		0.0f, 1.0f, normalizedTilePosition.x, normalizedTilePosition.y,
-		1.0f, 0.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y - normalizedTileSize.y,
-		0.0f, 0.0f, normalizedTilePosition.x, normalizedTilePosition.y - normalizedTileSize.y,
+	GLfloat vertices[] = { // Still some overlap with other tiles. Consider placing buffers into the image files.
+						   // Pos      // Tex
+		0.0f, 1.0f, normalizedTilePosition.x, normalizedTilePosition.y + normalizedTileSize.y,
+		1.0f, 0.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y,
+		0.0f, 0.0f, normalizedTilePosition.x, normalizedTilePosition.y,
 
-		0.0f, 1.0f, normalizedTilePosition.x, normalizedTilePosition.y,
-		1.0f, 1.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y,
-		1.0f, 0.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y - normalizedTileSize.y
+		0.0f, 1.0f, normalizedTilePosition.x, normalizedTilePosition.y + normalizedTileSize.y,
+		1.0f, 1.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y + normalizedTileSize.y,
+		1.0f, 0.0f, normalizedTilePosition.x + normalizedTileSize.x, normalizedTilePosition.y
 	};
 
 	glGenBuffers(1, &VBO);

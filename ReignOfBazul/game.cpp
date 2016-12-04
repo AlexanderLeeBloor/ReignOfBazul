@@ -49,7 +49,7 @@ void Game::Init()
 	//ResourceManager::LoadTexture("./Images/paddle.png", true, "paddle");
 	
 	// Configure game objects
-	glm::vec2 playerPos = glm::vec2(this->Width / 2 - PLAYER_SIZE.x / 2, this->Height - PLAYER_SIZE.y);
+	glm::vec2 playerPos = glm::vec2(this->Width / 2 - PLAYER_SIZE.x / 2 - 192, this->Height - PLAYER_SIZE.y - 256);
 	glm::vec2 playerSpritePosition = glm::vec2(0.0f, 0.250f);
 	glm::vec2 playerSpriteSize = glm::vec2(0.125f, 0.125f);
 	Player = new GameObject(playerSpritePosition, playerSpriteSize, playerPos, PLAYER_SIZE, ResourceManager::GetTexture("SpriteSheet"));

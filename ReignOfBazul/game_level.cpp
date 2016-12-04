@@ -26,7 +26,7 @@ void GameLevel::Load(const GLchar *file, GLuint levelWidth, GLuint levelHeight)
 			std::istringstream sstream(line);
 			std::vector<GLuint> row;
 			while (sstream >> tileCode) // Read each word separated by spaces
-				row.push_back(tileCode); //
+				row.push_back(tileCode);
 			tileData.push_back(row);
 		}
 		if (tileData.size() > 0)
@@ -89,6 +89,7 @@ void GameLevel::init(std::vector<std::vector<GLuint>> tileData, GLuint levelWidt
 			glm::vec2 tilepos(0.0f, 0.0f);
 			tilepos.x = (float)(tileData[y][x] % 8) / 8;
 			tilepos.y = (float)(tileData[y][x] / 8) / 8;
+
 			// All background tiles are 16px by 16px.
 			glm::vec2 tilesize(0.0f, 0.0f);
 			tilesize.x = (float)1 / 8;
